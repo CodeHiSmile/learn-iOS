@@ -16,8 +16,11 @@ struct WelcomeView: View {
                 Text("Welcome to the Weather App").bold().font(.title)
                 
                 Text("Please share your current location to get the weather in your area").padding()
-            }.multilineTextAlignment(.center)
-                .padding()
+                
+            }
+
+            .multilineTextAlignment(.center)
+            .padding()
             
             LocationButton(.shareCurrentLocation){
                 locationManager.requestLocation()

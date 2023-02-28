@@ -20,8 +20,10 @@ struct ContentView: View {
                 } else {
                     LoadingView().task {
                         do{
-                            weather = try await weatherManager.getcurrentWeather(latitude: location.latitude, longitude: location.longitude)
-                            
+                            weather = try await weatherManager.getcurrentWeather(
+                                latitude: location.latitude,
+                                longitude: location.longitude
+                            )
                         } catch {
                             print("Error getting weather: \(error)")
                         }
