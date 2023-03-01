@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SmallA_Button: View {
+struct SmallAddButton: View {
     var body: some View {
         ZStack{
             Circle()
@@ -22,8 +22,8 @@ struct SmallA_Button: View {
     }
 }
 
-struct SmallA_Button_Previews: PreviewProvider {
+struct SmallAddButton_Previews: PreviewProvider {
     static var previews: some View {
-        SmallA_Button()
+        SmallAddButton()
     }
 }
