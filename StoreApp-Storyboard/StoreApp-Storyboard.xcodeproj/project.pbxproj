@@ -16,6 +16,10 @@
 		F5942BDF29B08D3400D75435 /* StoreApp_StoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5942BDE29B08D3400D75435 /* StoreApp_StoryboardTests.swift */; };
 		F5942BE929B08D3400D75435 /* StoreApp_StoryboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5942BE829B08D3400D75435 /* StoreApp_StoryboardUITests.swift */; };
 		F5942BEB29B08D3400D75435 /* StoreApp_StoryboardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5942BEA29B08D3400D75435 /* StoreApp_StoryboardUITestsLaunchTests.swift */; };
+		F5B7D73329B0BEF60070EC93 /* CustomUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B7D73229B0BEDE0070EC93 /* CustomUIView.swift */; };
+		F5B7D73429B0BEF80070EC93 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B7D73029B0BEDE0070EC93 /* CustomImageView.swift */; };
+		F5B7D73529B0BEF90070EC93 /* CustomBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B7D73129B0BEDE0070EC93 /* CustomBlurView.swift */; };
+		F5B7D73629B0BEFB0070EC93 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B7D72F29B0BEDE0070EC93 /* Font.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		F5942BE429B08D3400D75435 /* StoreApp-StoryboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "StoreApp-StoryboardUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5942BE829B08D3400D75435 /* StoreApp_StoryboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreApp_StoryboardUITests.swift; sourceTree = "<group>"; };
 		F5942BEA29B08D3400D75435 /* StoreApp_StoryboardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreApp_StoryboardUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F5B7D72F29B0BEDE0070EC93 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		F5B7D73029B0BEDE0070EC93 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		F5B7D73129B0BEDE0070EC93 /* CustomBlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBlurView.swift; sourceTree = "<group>"; };
+		F5B7D73229B0BEDE0070EC93 /* CustomUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,7 @@
 		F5942BC629B08D3100D75435 /* StoreApp-Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				F5B7D72E29B0BED00070EC93 /* Helpers */,
 				F5942BC729B08D3100D75435 /* AppDelegate.swift */,
 				F5942BC929B08D3100D75435 /* SceneDelegate.swift */,
 				F5942BCB29B08D3100D75435 /* ViewController.swift */,
@@ -125,6 +134,17 @@
 				F5942BEA29B08D3400D75435 /* StoreApp_StoryboardUITestsLaunchTests.swift */,
 			);
 			path = "StoreApp-StoryboardUITests";
+			sourceTree = "<group>";
+		};
+		F5B7D72E29B0BED00070EC93 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F5B7D73129B0BEDE0070EC93 /* CustomBlurView.swift */,
+				F5B7D73029B0BEDE0070EC93 /* CustomImageView.swift */,
+				F5B7D73229B0BEDE0070EC93 /* CustomUIView.swift */,
+				F5B7D72F29B0BEDE0070EC93 /* Font.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +278,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5B7D73529B0BEF90070EC93 /* CustomBlurView.swift in Sources */,
 				F5942BCC29B08D3100D75435 /* ViewController.swift in Sources */,
+				F5B7D73629B0BEFB0070EC93 /* Font.swift in Sources */,
+				F5B7D73329B0BEF60070EC93 /* CustomUIView.swift in Sources */,
 				F5942BC829B08D3100D75435 /* AppDelegate.swift in Sources */,
 				F5942BCA29B08D3100D75435 /* SceneDelegate.swift in Sources */,
+				F5B7D73429B0BEF80070EC93 /* CustomImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
