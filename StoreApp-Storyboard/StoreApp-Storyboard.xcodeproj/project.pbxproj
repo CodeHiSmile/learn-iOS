@@ -20,6 +20,8 @@
 		F5B7D73429B0BEF80070EC93 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B7D73029B0BEDE0070EC93 /* CustomImageView.swift */; };
 		F5B7D73529B0BEF90070EC93 /* CustomBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B7D73129B0BEDE0070EC93 /* CustomBlurView.swift */; };
 		F5B7D73629B0BEFB0070EC93 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B7D72F29B0BEDE0070EC93 /* Font.swift */; };
+		F5E3E88E29B2478A009815CA /* HandbookCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E3E88D29B2478A009815CA /* HandbookCollectionViewCell.swift */; };
+		F5E3E89029B253F7009815CA /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E3E88F29B253F7009815CA /* Course.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		F5B7D73029B0BEDE0070EC93 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		F5B7D73129B0BEDE0070EC93 /* CustomBlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBlurView.swift; sourceTree = "<group>"; };
 		F5B7D73229B0BEDE0070EC93 /* CustomUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIView.swift; sourceTree = "<group>"; };
+		F5E3E88D29B2478A009815CA /* HandbookCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandbookCollectionViewCell.swift; sourceTree = "<group>"; };
+		F5E3E88F29B253F7009815CA /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +115,9 @@
 				F5942BC729B08D3100D75435 /* AppDelegate.swift */,
 				F5942BC929B08D3100D75435 /* SceneDelegate.swift */,
 				F5942BCB29B08D3100D75435 /* ViewController.swift */,
+				F5E3E88F29B253F7009815CA /* Course.swift */,
 				F5942BCD29B08D3100D75435 /* Main.storyboard */,
+				F5E3E88D29B2478A009815CA /* HandbookCollectionViewCell.swift */,
 				F5942BD029B08D3300D75435 /* Assets.xcassets */,
 				F5942BD229B08D3300D75435 /* LaunchScreen.storyboard */,
 				F5942BD529B08D3300D75435 /* Info.plist */,
@@ -278,6 +284,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5E3E89029B253F7009815CA /* Course.swift in Sources */,
+				F5E3E88E29B2478A009815CA /* HandbookCollectionViewCell.swift in Sources */,
 				F5B7D73529B0BEF90070EC93 /* CustomBlurView.swift in Sources */,
 				F5942BCC29B08D3100D75435 /* ViewController.swift in Sources */,
 				F5B7D73629B0BEFB0070EC93 /* Font.swift in Sources */,
