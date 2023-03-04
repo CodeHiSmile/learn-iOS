@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F592B05329B2FF9400445DB1 /* CoursesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F592B05229B2FF9400445DB1 /* CoursesTableViewCell.swift */; };
 		F5942BC829B08D3100D75435 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5942BC729B08D3100D75435 /* AppDelegate.swift */; };
 		F5942BCA29B08D3100D75435 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5942BC929B08D3100D75435 /* SceneDelegate.swift */; };
 		F5942BCC29B08D3100D75435 /* FeaturedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5942BCB29B08D3100D75435 /* FeaturedViewController.swift */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		F592B04E29B2DDFA00445DB1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F592B05229B2FF9400445DB1 /* CoursesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesTableViewCell.swift; sourceTree = "<group>"; };
 		F5942BC429B08D3100D75435 /* StoreApp-Storyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StoreApp-Storyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5942BC729B08D3100D75435 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5942BC929B08D3100D75435 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				F5E3E88D29B2478A009815CA /* HandbookCollectionViewCell.swift */,
+				F592B05229B2FF9400445DB1 /* CoursesTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -143,8 +146,8 @@
 				F592B05129B2E03B00445DB1 /* Classes */,
 				F592B04F29B2E00800445DB1 /* View Controllers */,
 				F5B7D72E29B0BED00070EC93 /* Helpers */,
-				F5942BCD29B08D3100D75435 /* Main.storyboard */,
 				F5942BD029B08D3300D75435 /* Assets.xcassets */,
+				F5942BCD29B08D3100D75435 /* Main.storyboard */,
 				F5942BD229B08D3300D75435 /* LaunchScreen.storyboard */,
 				F5942BD529B08D3300D75435 /* Info.plist */,
 			);
@@ -318,6 +321,7 @@
 				F5B7D73329B0BEF60070EC93 /* CustomUIView.swift in Sources */,
 				F5942BC829B08D3100D75435 /* AppDelegate.swift in Sources */,
 				F5942BCA29B08D3100D75435 /* SceneDelegate.swift in Sources */,
+				F592B05329B2FF9400445DB1 /* CoursesTableViewCell.swift in Sources */,
 				F5B7D73429B0BEF80070EC93 /* CustomImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

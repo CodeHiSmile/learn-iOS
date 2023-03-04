@@ -6,18 +6,36 @@
 //
 
 import UIKit
+import Combine
 
 class FeaturedViewController: UIViewController {
     @IBOutlet weak var cardView: CustomUIView!
     @IBOutlet weak var blurView: UIVisualEffectView!
     
+    @IBOutlet weak var coursesTableView: UITableView!
     @IBOutlet weak var handbooksCollectionView: UICollectionView!
+    
+    @IBOutlet weak var tableViewHeight: NSLayoutConstraint!
+    
+    private var tokens: Set<AnyCancellable> = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         handbooksCollectionView.delegate = self
         handbooksCollectionView.dataSource = self
         handbooksCollectionView.layer.masksToBounds = false
+        
+        coursesTableView.delegate = self
+        coursesTableView.dataSource = self
+        coursesTableView.layer.masksToBounds = false
+        
+        //listen event height when scroll table which will update height of screen
+        coursesTableView.publisher(for: \.contentSize)
+            .sink { newContentSize in
+                self.tableViewHeight.constant = newContentSize.height
+            }
+            .store(in: &tokens)
     }
 }
 
@@ -42,7 +60,40 @@ extension FeaturedViewController: UICollectionViewDelegate, UICollectionViewData
         
         return cell
     }
-    
-    
 }
 
+extension FeaturedViewController: UITableViewDelegate, UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return courses.count
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CourseTableCell", for: indexPath) as! CoursesTableViewCell
+        
+        let course = courses[indexPath.section]
+        
+        cell.courseTitle.text = course.courseTitle
+        cell.courseSubTitle.text = course.courseSubTitle
+        cell.courseDescription.text = course.courseDescription
+        cell.courseBackground.image = course.courseBackground
+        cell.courseBanner.image = course.courseBanner
+        cell.courseLogo.image = course.courseIcon
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        if section == 0 {
+            return 0
+        }
+        return 20
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 0
+    }
+}
