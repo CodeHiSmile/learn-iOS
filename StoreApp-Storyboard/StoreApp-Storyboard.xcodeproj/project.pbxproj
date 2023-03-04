@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		F5942BC829B08D3100D75435 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5942BC729B08D3100D75435 /* AppDelegate.swift */; };
 		F5942BCA29B08D3100D75435 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5942BC929B08D3100D75435 /* SceneDelegate.swift */; };
-		F5942BCC29B08D3100D75435 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5942BCB29B08D3100D75435 /* ViewController.swift */; };
+		F5942BCC29B08D3100D75435 /* FeaturedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5942BCB29B08D3100D75435 /* FeaturedViewController.swift */; };
 		F5942BCF29B08D3100D75435 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5942BCD29B08D3100D75435 /* Main.storyboard */; };
 		F5942BD129B08D3300D75435 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5942BD029B08D3300D75435 /* Assets.xcassets */; };
 		F5942BD429B08D3300D75435 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5942BD229B08D3300D75435 /* LaunchScreen.storyboard */; };
@@ -42,10 +42,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F592B04E29B2DDFA00445DB1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F5942BC429B08D3100D75435 /* StoreApp-Storyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StoreApp-Storyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5942BC729B08D3100D75435 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5942BC929B08D3100D75435 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F5942BCB29B08D3100D75435 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F5942BCB29B08D3100D75435 /* FeaturedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedViewController.swift; sourceTree = "<group>"; };
 		F5942BCE29B08D3100D75435 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F5942BD029B08D3300D75435 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5942BD329B08D3300D75435 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -88,9 +89,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F592B04F29B2E00800445DB1 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F5942BCB29B08D3100D75435 /* FeaturedViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		F592B05029B2E02800445DB1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F5E3E88D29B2478A009815CA /* HandbookCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F592B05129B2E03B00445DB1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F5E3E88F29B253F7009815CA /* Course.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		F5942BBB29B08D3100D75435 = {
 			isa = PBXGroup;
 			children = (
+				F592B04E29B2DDFA00445DB1 /* README.md */,
 				F5942BC629B08D3100D75435 /* StoreApp-Storyboard */,
 				F5942BDD29B08D3400D75435 /* StoreApp-StoryboardTests */,
 				F5942BE729B08D3400D75435 /* StoreApp-StoryboardUITests */,
@@ -111,13 +137,13 @@
 		F5942BC629B08D3100D75435 /* StoreApp-Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				F5B7D72E29B0BED00070EC93 /* Helpers */,
 				F5942BC729B08D3100D75435 /* AppDelegate.swift */,
 				F5942BC929B08D3100D75435 /* SceneDelegate.swift */,
-				F5942BCB29B08D3100D75435 /* ViewController.swift */,
-				F5E3E88F29B253F7009815CA /* Course.swift */,
+				F592B05029B2E02800445DB1 /* Cells */,
+				F592B05129B2E03B00445DB1 /* Classes */,
+				F592B04F29B2E00800445DB1 /* View Controllers */,
+				F5B7D72E29B0BED00070EC93 /* Helpers */,
 				F5942BCD29B08D3100D75435 /* Main.storyboard */,
-				F5E3E88D29B2478A009815CA /* HandbookCollectionViewCell.swift */,
 				F5942BD029B08D3300D75435 /* Assets.xcassets */,
 				F5942BD229B08D3300D75435 /* LaunchScreen.storyboard */,
 				F5942BD529B08D3300D75435 /* Info.plist */,
@@ -287,7 +313,7 @@
 				F5E3E89029B253F7009815CA /* Course.swift in Sources */,
 				F5E3E88E29B2478A009815CA /* HandbookCollectionViewCell.swift in Sources */,
 				F5B7D73529B0BEF90070EC93 /* CustomBlurView.swift in Sources */,
-				F5942BCC29B08D3100D75435 /* ViewController.swift in Sources */,
+				F5942BCC29B08D3100D75435 /* FeaturedViewController.swift in Sources */,
 				F5B7D73629B0BEFB0070EC93 /* Font.swift in Sources */,
 				F5B7D73329B0BEF60070EC93 /* CustomUIView.swift in Sources */,
 				F5942BC829B08D3100D75435 /* AppDelegate.swift in Sources */,

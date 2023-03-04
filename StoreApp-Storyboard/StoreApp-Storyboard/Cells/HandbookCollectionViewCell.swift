@@ -12,10 +12,10 @@ class HandbookCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var banner: UIImageView!
     @IBOutlet weak var logo: CustomImageView!
     @IBOutlet weak var progressBar: UIProgressView!
+    
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var subtitleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
-    @IBOutlet weak var titleLabel: UILabel!
-    
     let gradient = CAGradientLayer()
     
     override public func layoutSubviews() {
