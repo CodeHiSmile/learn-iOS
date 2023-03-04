@@ -13,4 +13,10 @@ CollectionView.layer.masksToBounds = false : the shadows from the cell spread ot
 cần tìm hiểu về publisher(for:)
 
 
+#Lession 14:
+04:30: Tại sao lại phải thêm 1 cái Visual đè lên nữa làm gì nhỉ?
+       Thuộc tính vibrancy dùng để làm gì?
+Chỉnh Line của title = 0 có tác dụng gì?
 
+
+        
