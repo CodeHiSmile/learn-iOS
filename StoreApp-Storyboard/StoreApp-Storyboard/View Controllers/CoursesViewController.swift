@@ -17,7 +17,9 @@ class CoursesViewController: UIViewController {
     @IBOutlet weak var authorLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var subTitleLabel: UILabel!
-//    @IBOutlet weak var iconImageView: CustomImageView!
+    @IBOutlet weak var iconImageView: CustomImageView!
+    
+    @IBOutlet weak var menuButotn: UIButton!
     
     @IBOutlet weak var sectionsTableView: UITableView!
     @IBOutlet weak var tableViewHeight: NSLayoutConstraint!
@@ -40,13 +42,37 @@ class CoursesViewController: UIViewController {
             .store(in: &tokens)
         
         //Set data for preview card
-//        self.iconImageView.image = course?.courseIcon
+        self.iconImageView.image = course?.courseIcon
         self.bannerImage.image = course?.courseBanner
         self.backgroundImage.image = course?.courseBackground
         self.titleLabel.text = course?.courseTitle
         self.subTitleLabel.text = course?.courseSubTitle
         self.descriptionLabel.text = course?.courseDescription
         self.authorLabel.text = "Taught by \(course?.courseAuthor?.formatted(.list(type: .and, width: .standard)) ?? "HiSmile")"
+        
+        
+        //Create UIMenu
+        let menu = UIMenu(
+            title: "Course Options",
+            options: .displayInline,
+            children: [
+                UIAction(title: "Share", image: UIImage(systemName: "square.and.arrow.up"), handler: { _ in
+                    //Share Course
+                }),
+                UIAction(title: "Take test", image: UIImage(systemName: "highlighter"), handler: { _ in
+                    //Take test
+                }),
+                UIAction(title: "Download", image: UIImage(systemName: "square.and.arrow.down"), handler: { _ in
+                    //Download
+                }),
+                UIAction(title: "Forums", image: UIImage(systemName: "chevron.left.forwardslash.chevron.right"), handler: { _ in
+                    //Forums
+                }),
+            ]
+        )
+        
+        menuButotn.showsMenuAsPrimaryAction = true
+        menuButotn.menu = menu
     }
     
     
