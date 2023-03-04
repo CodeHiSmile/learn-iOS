@@ -989,10 +989,10 @@
             </objects>
             <point key="canvasLocation" x="2773" y="-425"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Custom Tab Bar View Controller-->
         <scene sceneID="cIa-Yw-S1l">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="FxF-LS-DRy" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="FxF-LS-DRy" customClass="CustomTabBarViewController" customModule="StoreApp_Storyboard" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GdD-zu-dX5">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F53B4AEB29B359C800D823BA /* SectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53B4AEA29B359C800D823BA /* SectionTableViewCell.swift */; };
+		F53B4AED29B3931500D823BA /* CustomTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53B4AEC29B3931500D823BA /* CustomTabBarViewController.swift */; };
 		F592B05329B2FF9400445DB1 /* CoursesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F592B05229B2FF9400445DB1 /* CoursesTableViewCell.swift */; };
 		F592B05529B3232E00445DB1 /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F592B05429B3232E00445DB1 /* CoursesViewController.swift */; };
 		F592B05729B3260E00445DB1 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = F592B05629B3260E00445DB1 /* Section.swift */; };
@@ -47,6 +48,7 @@
 
 /* Begin PBXFileReference section */
 		F53B4AEA29B359C800D823BA /* SectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTableViewCell.swift; sourceTree = "<group>"; };
+		F53B4AEC29B3931500D823BA /* CustomTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarViewController.swift; sourceTree = "<group>"; };
 		F592B04E29B2DDFA00445DB1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F592B05229B2FF9400445DB1 /* CoursesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesTableViewCell.swift; sourceTree = "<group>"; };
 		F592B05429B3232E00445DB1 /* CoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 				F5B7D73029B0BEDE0070EC93 /* CustomImageView.swift */,
 				F5B7D73229B0BEDE0070EC93 /* CustomUIView.swift */,
 				F5B7D72F29B0BEDE0070EC93 /* Font.swift */,
+				F53B4AEC29B3931500D823BA /* CustomTabBarViewController.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				F5E3E88E29B2478A009815CA /* HandbookCollectionViewCell.swift in Sources */,
 				F592B05529B3232E00445DB1 /* CoursesViewController.swift in Sources */,
 				F53B4AEB29B359C800D823BA /* SectionTableViewCell.swift in Sources */,
+				F53B4AED29B3931500D823BA /* CustomTabBarViewController.swift in Sources */,
 				F5B7D73529B0BEF90070EC93 /* CustomBlurView.swift in Sources */,
 				F5942BCC29B08D3100D75435 /* FeaturedViewController.swift in Sources */,
 				F5B7D73629B0BEFB0070EC93 /* Font.swift in Sources */,
