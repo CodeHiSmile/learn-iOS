@@ -21,3 +21,8 @@ Chỉnh Line của title = 0 có tác dụng gì?
 
 #Lession 16:
 09:50: Có cách nào thêm sự kiện tap vào button mà không cần phải làm như video không?
+
+#Lession 18:
+05:00: Tại sao phải chỉnh collectionView như vậy?
+
+
