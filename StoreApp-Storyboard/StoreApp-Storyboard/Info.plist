@@ -20,6 +20,8 @@
 				</dict>
 			</array>
 		</dict>
+        <key>FirebaseAppDelegateProxyEnabled</key>
+        <false/>
 	</dict>
 </dict>
 </plist>

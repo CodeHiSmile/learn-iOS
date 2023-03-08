@@ -11,6 +11,11 @@ import Combine
 
 class LoginViewController: UIViewController {
     
+    enum LoginStatus {
+        case signUp
+        case signIn
+    }
+    
     @IBOutlet weak var loginCard: CustomUIView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var primaryBtn: UIButton!
@@ -18,6 +23,14 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var emailTextfield: UITextField!
     @IBOutlet weak var passwordTextfield: UITextField!
     
+    var loginStatus: LoginStatus = .signUp {
+        didSet {
+            self.titleLabel.text = (loginStatus == .signUp) ? "Sign up" : "Sign in"
+            self.primaryBtn.setTitle((loginStatus == .signUp) ? "Create account" : "Sign in", for: .normal)
+            self.accessoryBtn.setTitle((loginStatus == .signUp) ? "Don't have an account" : "Already have an account?",for: .normal)
+            self.passwordTextfield.textContentType = (loginStatus == .signUp) ? .newPassword : .password
+        }
+    }
     var emailIsEmpty = true
     var passwordIsEmpty = true
     private var tokens: Set<AnyCancellable> = []
@@ -50,24 +63,36 @@ class LoginViewController: UIViewController {
             alert.addAction(UIAlertAction(title: "OK", style: .default,handler: nil))
             self.present(alert,animated: true, completion: nil)
         } else {
-            Auth.auth().createUser(withEmail: emailTextfield.text!,
-                                   password: passwordTextfield.text!){
-                authResult, error in
-                guard error == nil else {
-                    print(error!.localizedDescription)
-                    return
+            if loginStatus == .signUp {
+                Auth.auth().createUser(withEmail: emailTextfield.text!,
+                                       password: passwordTextfield.text!){
+                    authResult, error in
+                    guard error == nil else {
+                        print(error!.localizedDescription)
+                        return
+                    }
+                     
+                    // Segure over to the home screen
+                    self.gotoHomeScreen()
                 }
-                
-                // Segure over to the home screen
-                self.gotoHomeScreen()
+            } else {
+                Auth.auth().signIn(withEmail: emailTextfield.text!, password: passwordTextfield.text!){
+                    authResult, error in
+                    guard error == nil else {
+                        print(error!.localizedDescription)
+                        return
+                    }
+                    
+                    // Segure over to the home screen
+                    self.gotoHomeScreen()
+                }
             }
-            
         }
     }
     
      
     @IBAction func accessoryButtonAction(_ sender: Any) {
-        
+        self.loginStatus = (self.loginStatus == .signUp) ? .signIn : .signUp
     }
     
     func gotoHomeScreen(){
