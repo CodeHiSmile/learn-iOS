@@ -35,9 +35,10 @@ class ExploreViewController: UIViewController {
         //listen event height when scroll table which will update height of screen
         topicTableView.publisher(for: \.contentSize)
             .sink { newContentSize in
-                self.tableViewHeight.constant = newContentSize.height
+                self.tableViewHeight.constant = newContentSize.height + 16
             }
             .store(in: &tokens)
+        
     }
 }
 
@@ -108,3 +109,18 @@ extension ExploreViewController: UITableViewDelegate, UITableViewDataSource {
     
 }
 
+//extension ExploreViewController: UIScrollViewDelegate{
+//    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+//        self.lastScrollYPosition = scrollView.contentOffset.y
+//        let totalScrollHeight = scrollView.contentSize.height
+//        let percentage = lastScrollYPosition / totalScrollHeight
+//        
+//        if percentage <= 0.2 {
+//            self.titleLabel.text = "Recent"
+//        } else if percentage <= 0.6 {
+//            self.titleLabel.text = "Topics"
+//        } else {
+//            self.titleLabel.text = "Popular"
+//        }
+//    }
+//}
