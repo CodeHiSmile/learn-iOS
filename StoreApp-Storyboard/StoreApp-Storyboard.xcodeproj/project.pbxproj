@@ -21,6 +21,9 @@
 		F582064529B6A4E300066DE9 /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = F582064429B6A4E300066DE9 /* FirebasePerformance */; };
 		F582064729B6A50300066DE9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F582064629B6A50200066DE9 /* GoogleService-Info.plist */; };
 		F58502B929B870A200D1AB82 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58502B829B870A200D1AB82 /* LibraryViewController.swift */; };
+		F58C89BD29BACC0A0090C6D7 /* CertificateItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58C89BA29BACC090090C6D7 /* CertificateItem.swift */; };
+		F58C89BE29BACC0A0090C6D7 /* CertificateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58C89BB29BACC090090C6D7 /* CertificateView.swift */; };
+		F58C89BF29BACC0A0090C6D7 /* FlipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58C89BC29BACC0A0090C6D7 /* FlipView.swift */; };
 		F592B05329B2FF9400445DB1 /* CoursesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F592B05229B2FF9400445DB1 /* CoursesTableViewCell.swift */; };
 		F592B05529B3232E00445DB1 /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F592B05429B3232E00445DB1 /* CoursesViewController.swift */; };
 		F592B05729B3260E00445DB1 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = F592B05629B3260E00445DB1 /* Section.swift */; };
@@ -68,6 +71,9 @@
 		F57E1CC229B6B4EE00A65C6B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F582064629B6A50200066DE9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F58502B829B870A200D1AB82 /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
+		F58C89BA29BACC090090C6D7 /* CertificateItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CertificateItem.swift; sourceTree = "<group>"; };
+		F58C89BB29BACC090090C6D7 /* CertificateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CertificateView.swift; sourceTree = "<group>"; };
+		F58C89BC29BACC0A0090C6D7 /* FlipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlipView.swift; sourceTree = "<group>"; };
 		F592B04E29B2DDFA00445DB1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F592B05229B2FF9400445DB1 /* CoursesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesTableViewCell.swift; sourceTree = "<group>"; };
 		F592B05429B3232E00445DB1 /* CoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +133,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F58C89B729BACB030090C6D7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F58C89BA29BACC090090C6D7 /* CertificateItem.swift */,
+				F58C89BB29BACC090090C6D7 /* CertificateView.swift */,
+				F58C89BC29BACC0A0090C6D7 /* FlipView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		F592B04F29B2E00800445DB1 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +201,7 @@
 		F5942BC629B08D3100D75435 /* StoreApp-Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				F58C89B729BACB030090C6D7 /* Views */,
 				F5942BC729B08D3100D75435 /* AppDelegate.swift */,
 				F5942BC929B08D3100D75435 /* SceneDelegate.swift */,
 				F592B05029B2E02800445DB1 /* Cells */,
@@ -380,9 +397,11 @@
 				F57E1CC329B6B4EE00A65C6B /* LoginViewController.swift in Sources */,
 				F53B4AEB29B359C800D823BA /* SectionTableViewCell.swift in Sources */,
 				F58502B929B870A200D1AB82 /* LibraryViewController.swift in Sources */,
+				F58C89BD29BACC0A0090C6D7 /* CertificateItem.swift in Sources */,
 				F53B4AF129B3A5A300D823BA /* ExploreViewController.swift in Sources */,
 				F53B4AED29B3931500D823BA /* CustomTabBarViewController.swift in Sources */,
 				F5B1E2B129B49E7D00343D6B /* TopicsTableViewCell.swift in Sources */,
+				F58C89BF29BACC0A0090C6D7 /* FlipView.swift in Sources */,
 				F5B7D73529B0BEF90070EC93 /* CustomBlurView.swift in Sources */,
 				F5942BCC29B08D3100D75435 /* FeaturedViewController.swift in Sources */,
 				F5B7D73629B0BEFB0070EC93 /* Font.swift in Sources */,
@@ -390,6 +409,7 @@
 				F5942BC829B08D3100D75435 /* AppDelegate.swift in Sources */,
 				F5942BCA29B08D3100D75435 /* SceneDelegate.swift in Sources */,
 				F592B05729B3260E00445DB1 /* Section.swift in Sources */,
+				F58C89BE29BACC0A0090C6D7 /* CertificateView.swift in Sources */,
 				F592B05329B2FF9400445DB1 /* CoursesTableViewCell.swift in Sources */,
 				F53B4AEF29B3A4A000D823BA /* SectionsCollectionViewCell.swift in Sources */,
 				F5B7D73429B0BEF80070EC93 /* CustomImageView.swift in Sources */,

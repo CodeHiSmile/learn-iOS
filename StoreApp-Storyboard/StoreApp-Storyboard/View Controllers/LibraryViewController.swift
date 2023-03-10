@@ -7,6 +7,7 @@
 
 import UIKit
 import Combine
+import SwiftUI
 
 class LibraryViewController: UIViewController {
 
@@ -37,6 +38,12 @@ class LibraryViewController: UIViewController {
                 self.tableViewHeight.constant = newContentSize.height + 16
             }
             .store(in: &tokens)
+    }
+    
+    @IBSegueAction func createCertificateView(_ coder: NSCoder) -> UIViewController? {
+        let v = UIHostingController(coder: coder, rootView: CertificateView())
+        v!.view.backgroundColor = .clear
+        return v
     }
 }
 

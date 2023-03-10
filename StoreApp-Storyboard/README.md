@@ -26,3 +26,5 @@ Chỉnh Line của title = 0 có tác dụng gì?
 05:00: Tại sao phải chỉnh collectionView như vậy?
 
 
+
+Container & Hosting có gì khác nhau?
