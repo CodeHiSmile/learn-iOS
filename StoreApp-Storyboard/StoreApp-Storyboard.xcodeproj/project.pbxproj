@@ -36,6 +36,9 @@
 		F5942BDF29B08D3400D75435 /* StoreApp_StoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5942BDE29B08D3400D75435 /* StoreApp_StoryboardTests.swift */; };
 		F5942BE929B08D3400D75435 /* StoreApp_StoryboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5942BE829B08D3400D75435 /* StoreApp_StoryboardUITests.swift */; };
 		F5942BEB29B08D3400D75435 /* StoreApp_StoryboardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5942BEA29B08D3400D75435 /* StoreApp_StoryboardUITestsLaunchTests.swift */; };
+		F595901129BC0B0E00E467AD /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F595901029BC0B0E00E467AD /* NotificationTableViewCell.swift */; };
+		F595901329BC0C6600E467AD /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F595901229BC0C6600E467AD /* NotificationsViewController.swift */; };
+		F595901529BC0EF300E467AD /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = F595901429BC0EF300E467AD /* Notification.swift */; };
 		F5B1E2B129B49E7D00343D6B /* TopicsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B1E2B029B49E7D00343D6B /* TopicsTableViewCell.swift */; };
 		F5B1E2B329B49FD600343D6B /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B1E2B229B49FD600343D6B /* Topic.swift */; };
 		F5B7D73329B0BEF60070EC93 /* CustomUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B7D73229B0BEDE0070EC93 /* CustomUIView.swift */; };
@@ -91,6 +94,9 @@
 		F5942BE429B08D3400D75435 /* StoreApp-StoryboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "StoreApp-StoryboardUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5942BE829B08D3400D75435 /* StoreApp_StoryboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreApp_StoryboardUITests.swift; sourceTree = "<group>"; };
 		F5942BEA29B08D3400D75435 /* StoreApp_StoryboardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreApp_StoryboardUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F595901029BC0B0E00E467AD /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
+		F595901229BC0C6600E467AD /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		F595901429BC0EF300E467AD /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		F5B1E2B029B49E7D00343D6B /* TopicsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsTableViewCell.swift; sourceTree = "<group>"; };
 		F5B1E2B229B49FD600343D6B /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
 		F5B7D72F29B0BEDE0070EC93 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
@@ -151,6 +157,7 @@
 				F592B05429B3232E00445DB1 /* CoursesViewController.swift */,
 				F53B4AF029B3A5A300D823BA /* ExploreViewController.swift */,
 				F58502B829B870A200D1AB82 /* LibraryViewController.swift */,
+				F595901229BC0C6600E467AD /* NotificationsViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -163,6 +170,7 @@
 				F53B4AEA29B359C800D823BA /* SectionTableViewCell.swift */,
 				F53B4AEE29B3A4A000D823BA /* SectionsCollectionViewCell.swift */,
 				F5B1E2B029B49E7D00343D6B /* TopicsTableViewCell.swift */,
+				F595901029BC0B0E00E467AD /* NotificationTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -173,6 +181,7 @@
 				F5E3E88F29B253F7009815CA /* Course.swift */,
 				F592B05629B3260E00445DB1 /* Section.swift */,
 				F5B1E2B229B49FD600343D6B /* Topic.swift */,
+				F595901429BC0EF300E467AD /* Notification.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -400,14 +409,17 @@
 				F58C89BD29BACC0A0090C6D7 /* CertificateItem.swift in Sources */,
 				F53B4AF129B3A5A300D823BA /* ExploreViewController.swift in Sources */,
 				F53B4AED29B3931500D823BA /* CustomTabBarViewController.swift in Sources */,
+				F595901329BC0C6600E467AD /* NotificationsViewController.swift in Sources */,
 				F5B1E2B129B49E7D00343D6B /* TopicsTableViewCell.swift in Sources */,
 				F58C89BF29BACC0A0090C6D7 /* FlipView.swift in Sources */,
+				F595901129BC0B0E00E467AD /* NotificationTableViewCell.swift in Sources */,
 				F5B7D73529B0BEF90070EC93 /* CustomBlurView.swift in Sources */,
 				F5942BCC29B08D3100D75435 /* FeaturedViewController.swift in Sources */,
 				F5B7D73629B0BEFB0070EC93 /* Font.swift in Sources */,
 				F5B7D73329B0BEF60070EC93 /* CustomUIView.swift in Sources */,
 				F5942BC829B08D3100D75435 /* AppDelegate.swift in Sources */,
 				F5942BCA29B08D3100D75435 /* SceneDelegate.swift in Sources */,
+				F595901529BC0EF300E467AD /* Notification.swift in Sources */,
 				F592B05729B3260E00445DB1 /* Section.swift in Sources */,
 				F58C89BE29BACC0A0090C6D7 /* CertificateView.swift in Sources */,
 				F592B05329B2FF9400445DB1 /* CoursesTableViewCell.swift in Sources */,
