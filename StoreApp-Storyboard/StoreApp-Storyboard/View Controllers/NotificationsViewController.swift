@@ -7,6 +7,7 @@
 
 import UIKit
 import Combine
+import FirebaseFirestore
 
 class NotificationsViewController: UIViewController {
     @IBOutlet weak var notiTableViewHeight: NSLayoutConstraint!
@@ -40,7 +41,13 @@ class NotificationsViewController: UIViewController {
         }
         
         self.dataSource.defaultRowAnimation = .fade
-        loadData()
+        Task {
+            do {
+                try await loadData()
+            } catch let error {
+                print("Error: \(error.localizedDescription)")
+            }
+        }
         
         notificationTableView.publisher(for: \.contentSize)
             .sink { newContentSize in
@@ -49,11 +56,27 @@ class NotificationsViewController: UIViewController {
             .store(in: &tokens)
     }
     
-    func loadData() {
+    func loadData() async throws {
         currentSnapshot = NSDiffableDataSourceSnapshot<TBSection, NotificationModel>()
         currentSnapshot.appendSections([.main])
-        self.currentSnapshot.appendItems(sampleNotifications, toSection: .main)
-        self.dataSource.apply(currentSnapshot, animatingDifferences: true)
+
+        let docs = try await Firestore.firestore()
+            .collection("notifications")
+            .order(by: "sentAt", descending: false)
+            .getDocuments()
+        var notifications = [NotificationModel]()
+
+        for docSnapshot in docs.documents {
+            if let data = try? docSnapshot.data(as: NotificationModel.self) {
+                notifications.append(data)
+            }
+        }
+
+        self.currentSnapshot.appendItems(notifications, toSection: .main)
+        await self.dataSource.apply(currentSnapshot, animatingDifferences: true)
+        DispatchQueue.main.async {
+            self.cardView.alpha = 1
+        }
     }
 }
 
